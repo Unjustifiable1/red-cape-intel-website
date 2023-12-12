@@ -9,21 +9,30 @@
 
     <script src="./mainscript.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
+
     <link type="image/png" sizes="16x16" rel="icon" href="./icons8-perspective-view-gradient-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="./icons8-perspective-view-gradient-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./icons8-perspective-view-gradient-96.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;700;900&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./index.html"><img src="./icons8-perspective-view-gradient-96.png" id="navLogo" alt="red cape intel logo"></a>
+            <a href="./index.html" id="navLogoContainer">
+                <img src="./icons8-perspective-view-gradient-96.png" id="navLogoImg" alt="red cape intel logo from icons8">
+                <span id="navLogoName">Red Cape Intel</span>
+                <span id="navLogoSlogan">Where Super Solutions Create Business Victories</span>
+            </a>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Instructions</a></li>
                 <li><a href="#">About</a></li>
+                <li><a id="navCTA" href="#">Contact Us</a></li>
             </ul>
-            <button><a href="#">CTA</a></button>
         </nav>
     </header>
     
@@ -33,10 +42,9 @@
     
     <footer>
         <div class="attribution">
-            <span>Copyright © 2023 | Red Cape Intel | Coded by </span>
+            <span>Red Cape Intel © 2023 | All Rights Reserved | Coded by </span>
             <a href="https://github.com/Unjustifiable1/" target="_blank">Unjustifiable1</a> 
             <img src="./icons8-ninja-ios-16-32.png" alt="ninja icon by Icons8">
-            <span> | Project by _ _ _</span>
         </div>
     </footer>
 

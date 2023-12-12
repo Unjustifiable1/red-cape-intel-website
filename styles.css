@@ -16,6 +16,9 @@
     --fw-500: 500;
     --fw-700: 700;
     --fw-900: 900;
+
+    --br: 0.25em;
+    --pad: 0.25em;
 }
 
 
@@ -39,47 +42,85 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 2em;
+    height: 7em;
+    padding: 1em;
 }
 
 nav ul { list-style-type: none; }
 
 nav li {
     display: inline;
-    margin-right: 2rem;
+    margin-left: 2em;
+    padding: 0.25em 0;
+    border-radius: 1em;
 }
 
 nav a {
     text-decoration: none;
-    color: lightgoldenrodyellow;
-    padding: 0.25rem 1rem;
-    border-radius: 1rem;
+    color: var(--clr-neutral-grey);
+    padding: 0.25em 1em;
+    border-radius: 1em;
 }
 
-#navLogo {
-    width: 3em;
+#navCTA {
+    font-size: 2em;
+    background-color: var(--clr-brand-secondary);
+    border: 2px solid var(--clr-neutral-grey);
+    border-radius: 2em;
 
 }
 
-nav button {
-    padding: 0.25rem 1rem;
-    background-color: darkslategrey;
-    border: 2px solid lightgoldenrodyellow;
-    border-radius: 1rem;
+#navLogoContainer {
+    border: 2px solid var(--clr-brand-secondary);
+    height: 5em;
+    display: grid;
+    column-gap: 0.5em;
+    grid-template-columns: 5em auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "img name"
+        "img slogan";
 }
 
-nav button:hover, 
-nav a:hover {
-    color: #000;
-    background-color: hsl(115, 93%, 59%);
+#navLogoContainer:hover {
+    border: 2px solid var(--clr-neutral-grey);
 }
+
+#navLogoImg {
+    width: 100%;
+    grid-area: img;
+}
+
+#navLogoName {
+    grid-area: name;
+    text-align: left;
+    font-size: 3em;
+    font-family: var(--ff-logo);
+    color: var(--clr-brand-primary);
+}
+
+#navLogoSlogan {
+    grid-area: slogan;
+    text-align: left;
+    font-size: 0.75em;
+    font-family: var(--ff-slogan);
+    color: var(--clr-neutral-grey);
+}
+
+#navCTA:hover, 
+nav li > a:hover {
+    color: var(--clr-brand-secondary);
+    background-color: var(--clr-neutral-grey);
+}
+
 
 
 /* header and footer defaults */
 
 header, footer {
-    background-color: darkslategrey;
-    color: lightgoldenrodyellow;
+    background-color: var(--clr-brand-secondary);
+    color: var(--clr-neutral-grey);
     padding: 0.25em 4em;
 }
 
