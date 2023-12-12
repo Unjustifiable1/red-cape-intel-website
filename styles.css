@@ -1,14 +1,36 @@
+:root {
+    --clr-neutral-white: #f2f2f2;
+    --clr-neutral-grey: #B5C3F4;
+    --clr-neutral-black: #141414;
+
+    --clr-brand-primary: #d50a0d;
+    --clr-brand-secondary: #22223B;
+
+    --ff-logo: 'Montserrat Alternates', sans-serif;
+    --ff-slogan: 'Roboto Mono', monospace;
+    --ff-body: 'Roboto', sans-serif;
+
+    --fw-100: 100;
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+
 * {
     font: inherit;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
 
     /* border: 1px solid red; */
 }
+
 
 
 /* Navigation */
@@ -32,6 +54,11 @@ nav a {
     color: lightgoldenrodyellow;
     padding: 0.25rem 1rem;
     border-radius: 1rem;
+}
+
+#navLogo {
+    width: 3em;
+
 }
 
 nav button {
