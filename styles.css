@@ -6,16 +6,9 @@
     --clr-brand-primary: #d50a0d;
     --clr-brand-secondary: #22223B;
 
-    --ff-logo: 'Montserrat Alternates', sans-serif;
-    --ff-slogan: 'Roboto Mono', monospace;
-    --ff-body: 'Roboto', sans-serif;
-
-    --fw-100: 100;
-    --fw-300: 300;
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-700: 700;
-    --fw-900: 900;
+    --ff-logo: 'Montserrat Alternates', system-ui, sans-serif;
+    --ff-slogan: monospace, system-ui, sans-serif;
+    --ff-body: 'Roboto', system-ui, sans-serif;
 
     --br: 0.25em;
     --pad: 0.25em;
@@ -24,7 +17,7 @@
 
 * {
     font: inherit;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-body);
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -102,7 +95,7 @@ nav a {
 
 #navLogoSlogan {
     grid-area: slogan;
-    text-align: left;
+    text-align: center;
     font-size: 0.75em;
     font-family: var(--ff-slogan);
     color: var(--clr-neutral-grey);
