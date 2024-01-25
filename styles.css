@@ -6,9 +6,7 @@
     --clr-brand-primary: #d50a0d;
     --clr-brand-secondary: #22223B;
 
-    --ff-logo: 'Montserrat Alternates', system-ui, sans-serif;
-    --ff-slogan: monospace, system-ui, sans-serif;
-    --ff-body: 'Roboto', system-ui, sans-serif;
+    --ff-body: system-ui, sans-serif;
 
     --br: 0.25em;
     --pad: 0.25em;
@@ -89,7 +87,6 @@ nav a {
     grid-area: name;
     text-align: left;
     font-size: 3em;
-    font-family: var(--ff-logo);
     color: var(--clr-brand-primary);
 }
 
@@ -97,7 +94,6 @@ nav a {
     grid-area: slogan;
     text-align: center;
     font-size: 0.75em;
-    font-family: var(--ff-slogan);
     color: var(--clr-neutral-grey);
 }
 
