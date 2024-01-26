@@ -74,10 +74,7 @@ nav a {
 #navLogoContainer {
     border: 2px solid transparent;
     height: 5em;
-}
-
-#navLogoContainer:hover {
-    border: 2px solid var(--clr-brand-secondary);
+    padding-inline: 0;
 }
 
 #navLogoImg {
@@ -104,6 +101,7 @@ nav li > a:hover {
 /* header and footer defaults */
 
 header {
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 0.25em 10%;
 }
 
