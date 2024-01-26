@@ -6,6 +6,8 @@
     --clr-brand-primary: #d50a0d;
     --clr-brand-secondary: #22223B;
 
+    --clr-op-primary: rgba(214, 10, 13, 0.4);
+
     --ff-body: system-ui, sans-serif;
 
     --br: 0.25em;
@@ -21,10 +23,20 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+    color: var(--clr-neutral-black);
 
     /* border: 1px solid red; */
 }
 
+body {
+    background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
+    background-attachment: fixed;
+}
+
+
+section ul,
+footer ul,
+nav ul { list-style-type: none; }
 
 
 /* Navigation */
@@ -38,7 +50,6 @@ nav {
     padding: 1em;
 }
 
-nav ul { list-style-type: none; }
 
 nav li {
     display: inline;
@@ -49,68 +60,57 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: var(--clr-neutral-grey);
     padding: 0.25em 1em;
     border-radius: 1em;
 }
 
 #navCTA {
     font-size: 2em;
-    background-color: var(--clr-brand-secondary);
-    border: 2px solid var(--clr-neutral-grey);
+    border: 2px solid var(--clr-brand-secondary);
     border-radius: 2em;
 
 }
 
 #navLogoContainer {
-    border: 2px solid var(--clr-brand-secondary);
+    border: 2px solid transparent;
     height: 5em;
-    display: grid;
-    column-gap: 0.5em;
-    grid-template-columns: 5em auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "img name"
-        "img slogan";
 }
 
 #navLogoContainer:hover {
-    border: 2px solid var(--clr-neutral-grey);
+    border: 2px solid var(--clr-brand-secondary);
 }
 
 #navLogoImg {
-    width: 100%;
-    grid-area: img;
-}
-
-#navLogoName {
-    grid-area: name;
-    text-align: left;
-    font-size: 3em;
-    color: var(--clr-brand-primary);
-}
-
-#navLogoSlogan {
-    grid-area: slogan;
-    text-align: center;
-    font-size: 0.75em;
-    color: var(--clr-neutral-grey);
+    width: 180px;
 }
 
 #navCTA:hover, 
 nav li > a:hover {
-    color: var(--clr-brand-secondary);
-    background-color: var(--clr-neutral-grey);
+    color: var(--clr-neutral-grey);
+    background-color: var(--clr-brand-secondary);
+}
+
+
+
+/* hero section */
+
+#heroSection {
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 
 
 /* header and footer defaults */
 
-header, footer {
+header {
+    padding: 0.25em 10%;
+}
+
+footer {
     background-color: var(--clr-brand-secondary);
     color: var(--clr-neutral-grey);
-    padding: 0.25em 4em;
+    padding: 0.25em 10%;
 }
 
 
