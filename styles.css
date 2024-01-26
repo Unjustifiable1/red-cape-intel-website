@@ -89,13 +89,34 @@ nav li > a:hover {
 
 
 
-/* hero section */
+/* section control */
 
-#heroSection {
-    height: 100vh;
-    background-attachment: fixed;
+section {
+    padding: 4em 10%;
+    min-height: 35dvh;;
 }
 
+/* hero section */
+
+#heroSection .wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+#heroContent h1 span {
+    display: block;
+    text-align: left;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#heroImg {
+    border: 1px solid black;
+    height: 50dvh;
+}
 
 
 /* header and footer defaults */
