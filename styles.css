@@ -61,7 +61,7 @@ nav li {
     margin-left: 2em;
 }
 
-.navBtn {
+.navLink {
     border-radius: 1em;
     padding: 0.25em 1em;
 }
@@ -79,7 +79,7 @@ nav li {
     width: 180px;
 }
 
-nav .navBtn:hover {
+nav .navLink:hover {
     color: var(--clr-neutral-grey);
     background-color: var(--clr-brand-secondary);
 }
@@ -102,12 +102,29 @@ section {
     gap: 2em;
 }
 
+#heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
 #heroContent h1 span {
     display: block;
     text-align: left;
     font-size: 3em;
     font-weight: 700;
-    line-height: 1em;
+    line-height: 1.05em;
+}
+
+#heroContent h1 span:nth-child(2) {
+    color: var(--clr-glow);
+}
+
+#heroContent p {
+    width: 90%;
+    text-align: left;
 }
 
 #heroImg {
