@@ -8,6 +8,8 @@
 
     --clr-op-primary: rgba(214, 10, 13, 0.4);
 
+    --clr-glow: #03e9f4;
+
     --ff-body: system-ui, sans-serif;
 
     --br: 0.25em;
@@ -23,6 +25,8 @@
     font-size: 16px;
     font-weight: 400;
     text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
     color: var(--clr-neutral-black);
 
     /* border: 1px solid red; */
@@ -51,38 +55,31 @@ nav {
 }
 
 
+
 nav li {
     display: inline;
     margin-left: 2em;
-    padding: 0.25em 0;
-    border-radius: 1em;
 }
 
-nav a {
-    text-decoration: none;
-    padding: 0.25em 1em;
+.navBtn {
     border-radius: 1em;
+    padding: 0.25em 1em;
 }
 
 #navCTA {
-    font-size: 2em;
-    border: 2px solid var(--clr-brand-secondary);
-    border-radius: 2em;
-    /* background-color: var(--clr-neutral-grey); */
+    text-transform: uppercase;
 }
 
 #navLogoContainer {
     border: 2px solid transparent;
     height: 5em;
-    padding-inline: 0;
 }
 
 #navLogoImg {
     width: 180px;
 }
 
-#navCTA:hover, 
-nav li > a:hover {
+nav .navBtn:hover {
     color: var(--clr-neutral-grey);
     background-color: var(--clr-brand-secondary);
 }
@@ -119,10 +116,98 @@ section {
 }
 
 
+
+/* glow buttons */
+
+.glowBtn {
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 1em;
+    letter-spacing: 4px;
+    color: var(--clr-glow);
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.glowBtn:hover {
+    background-color: var(--clr-glow);
+    color: var(--clr-brand-secondary);
+    box-shadow: 0 0 5px var(--clr-glow),
+                0 0 25px var(--clr-glow),
+                0 0 60px var(--clr-glow);
+                /* 0 0 200px var(--clr-glow); */
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    z-index: 1000;
+}
+
+.glowBtn span {
+    position: absolute;
+    display: block;
+}
+
+.glowBtn span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--clr-glow));
+    animation: animate1 1s infinite;
+}
+@keyframes animate1 {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.glowBtn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--clr-glow));
+    animation: animate2 1s infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2 {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+.glowBtn span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, var(--clr-glow));
+    animation: animate3 1s infinite;
+    animation-delay: .5s;
+}
+@keyframes animate3 {
+    0% { right: -100%; }
+    100% { right: 100%; }
+}
+
+.glowBtn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--clr-glow));
+    animation: animate4 1s infinite;
+    animation-delay: .75s;
+}
+@keyframes animate4 {
+    0% { bottom: -100%; }
+    100% { bottom: 100%; }
+}
+
+
+
 /* header and footer defaults */
 
 header {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), var(--clr-brand-secondary));
     padding: 0.25em 10%;
 }
 
