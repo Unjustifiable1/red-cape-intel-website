@@ -68,7 +68,7 @@ nav a {
     font-size: 2em;
     border: 2px solid var(--clr-brand-secondary);
     border-radius: 2em;
-
+    /* background-color: var(--clr-neutral-grey); */
 }
 
 #navLogoContainer {
@@ -98,7 +98,7 @@ section {
 
 /* hero section */
 
-#heroSection .wrapper {
+#hero .wrapper {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
