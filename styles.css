@@ -97,7 +97,7 @@ h2 {
     color: var(--clr-brand-primary);
     background-color: var(--clr-neutral-white);
     font-size: 1em;
-    font-weight: 700;
+    text-transform: uppercase;
     border: 1px solid var(--clr-brand-primary);
     border-radius: 1em;
     padding: 0.25em 1em;
@@ -241,8 +241,11 @@ h2 {
 
 .aboutWrapper {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    
+    align-items: center;
+    gap: 2em;
+
 }
 
 .aboutContent {
