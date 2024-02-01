@@ -93,6 +93,18 @@ section {
     min-height: 35dvh;;
 }
 
+h2 {
+    color: var(--clr-brand-primary);
+    background-color: var(--clr-neutral-white);
+    font-size: 1em;
+    font-weight: 700;
+    border: 1px solid var(--clr-brand-primary);
+    border-radius: 1em;
+    padding: 0.25em 1em;
+    box-sizing: content-box;
+    box-shadow: 0 0 5px var(--clr-neutral-black);
+}
+
 /* hero section */
 
 #hero .wrapper {
@@ -218,6 +230,29 @@ section {
     0% { bottom: -100%; }
     100% { bottom: 100%; }
 }
+
+
+
+/* about section */
+
+#about {
+    background-color: var(--clr-neutral-white);
+}
+
+.aboutWrapper {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+
+
 
 
 
