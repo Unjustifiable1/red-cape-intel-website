@@ -50,8 +50,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    height: 7em;
-    padding: 1em;
+    /* height: 7em; */
+    padding: 0.5em;
 }
 
 
@@ -76,7 +76,7 @@ nav li {
 }
 
 #navLogoImg {
-    width: 180px;
+    height: 5em;
 }
 
 nav .navLink:hover {
@@ -89,20 +89,36 @@ nav .navLink:hover {
 /* section control */
 
 section {
-    padding: 4em 10%;
+    padding: 6em 10%;
     min-height: 35dvh;;
 }
 
+.darkBG {
+    background-color: var(--clr-brand-secondary);
+}
+
 h2 {
-    color: var(--clr-brand-primary);
-    background-color: var(--clr-neutral-white);
+    color: var(--clr-neutral-white);
+    /* background-color: rgba(244, 0, 0, 0.5); */
     font-size: 1em;
+    width: fit-content;
     text-transform: uppercase;
-    border: 1px solid var(--clr-brand-primary);
+    /* border: 1px solid var(--clr-brand-primary); */
     border-radius: 1em;
     padding: 0.25em 1em;
-    box-sizing: content-box;
-    box-shadow: 0 0 5px var(--clr-neutral-black);
+    box-shadow: 0 0 5px var(--clr-brand-primary),
+                0 0 15px var(--clr-brand-primary),
+                0 0 25px var(--clr-brand-primary),
+                0 0 40px var(--clr-neutral-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+h2 img {
+    width: 1em;
+    color: red;
 }
 
 /* hero section */
@@ -235,10 +251,6 @@ h2 {
 
 /* about section */
 
-#about {
-    background-color: var(--clr-neutral-white);
-}
-
 .aboutWrapper {
     display: flex;
     flex-direction: column;
@@ -280,5 +292,5 @@ footer {
     align-items: center;
     gap: 0.5rem;
 }
-.attribution span { font-size: 11px; }
+.attribution span, .attribution a { font-size: 11px; }
 .attribution a { color: hsl(115, 93%, 59%); }
