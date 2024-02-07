@@ -80,8 +80,8 @@ nav li {
 }
 
 nav .navLink:hover {
-    color: var(--clr-neutral-grey);
-    background-color: var(--clr-brand-secondary);
+    color: var(--clr-glow);
+    border-bottom: 2px solid var(--clr-glow);
 }
 
 
@@ -106,9 +106,9 @@ h2 {
     /* border: 1px solid var(--clr-brand-primary); */
     border-radius: 1em;
     padding: 0.25em 1em;
-    box-shadow: 0 0 5px var(--clr-brand-primary),
-                0 0 15px var(--clr-brand-primary),
-                0 0 25px var(--clr-brand-primary),
+    box-shadow: 0 0 5px var(--clr-glow),
+                0 0 15px var(--clr-glow),
+                0 0 25px var(--clr-glow),
                 0 0 40px var(--clr-neutral-black);
     display: flex;
     justify-content: center;
@@ -120,6 +120,19 @@ h2 img {
     width: 1em;
     color: red;
 }
+
+h2 svg {
+    width: 1em;
+    aspect-ratio: 1;
+}
+
+.h2svg {
+    fill: var(--clr-neutral-white);
+    /* stroke: var(--clr-neutral-white); */
+}
+
+
+
 
 /* hero section */
 
