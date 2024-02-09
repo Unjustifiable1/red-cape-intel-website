@@ -52,7 +52,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    /* height: 7em; */
     padding: 0.5em;
 }
 
@@ -108,10 +107,6 @@ h2 {
     border-bottom: 4px solid var(--clr-glow);
     border-radius: .5em .5em 2em 2em;
     padding: 0.5em 1em;
-    /* box-shadow: 0 0 5px var(--clr-glow),
-                0 0 15px var(--clr-glow),
-                0 0 25px var(--clr-glow),
-                0 0 40px var(--clr-neutral-black); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +125,6 @@ h2 svg {
 
 .h2svg {
     fill: var(--clr-glow);
-    /* stroke: var(--clr-neutral-white); */
 }
 
 
@@ -197,7 +191,6 @@ h2 svg {
     box-shadow: 0 0 5px var(--clr-glow),
                 0 0 25px var(--clr-glow),
                 0 0 60px var(--clr-glow);
-                /* 0 0 200px var(--clr-glow); */
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
     z-index: 1000;
 }
@@ -271,14 +264,14 @@ h2 svg {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 2em;
+    /* gap: 2em; */
 
 }
 
 .aboutContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    gap: 4em;
 }
 
 
