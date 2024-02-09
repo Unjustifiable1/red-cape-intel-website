@@ -14,6 +14,8 @@
 
     --br: 0.25em;
     --pad: 0.25em;
+
+    --h2-svg-size: 2em;
 }
 
 
@@ -99,35 +101,35 @@ section {
 
 h2 {
     color: var(--clr-neutral-white);
-    /* background-color: rgba(244, 0, 0, 0.5); */
+    background-color: rgba(0, 0, 0, 0.2);
     font-size: 1em;
     width: fit-content;
     text-transform: uppercase;
-    /* border: 1px solid var(--clr-brand-primary); */
-    border-radius: 1em;
-    padding: 0.25em 1em;
-    box-shadow: 0 0 5px var(--clr-glow),
+    border-bottom: 4px solid var(--clr-glow);
+    border-radius: .5em .5em 2em 2em;
+    padding: 0.5em 1em;
+    /* box-shadow: 0 0 5px var(--clr-glow),
                 0 0 15px var(--clr-glow),
                 0 0 25px var(--clr-glow),
-                0 0 40px var(--clr-neutral-black);
+                0 0 40px var(--clr-neutral-black); */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
+    margin-bottom: 3em;
 }
 
 h2 img {
     width: 1em;
-    color: red;
 }
 
 h2 svg {
-    width: 1em;
-    aspect-ratio: 1;
+    width: var(--h2-svg-size);
+    height: var(--h2-svg-size);
 }
 
 .h2svg {
-    fill: var(--clr-neutral-white);
+    fill: var(--clr-glow);
     /* stroke: var(--clr-neutral-white); */
 }
 
