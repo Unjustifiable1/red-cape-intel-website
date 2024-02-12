@@ -285,6 +285,34 @@ h2 svg {
     gap: 2em;
 }
 
+.featureItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.featureIcon {
+    background-color: var(--clr-neutral-grey);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.featureIcon svg {
+    width: 36px;
+    height: 36px;
+}
+
+.iconBase {
+    fill: blue;
+
+}
+
+.iconDark {
+    fill: green;
+
+}
+
 
 
 /* about section */
