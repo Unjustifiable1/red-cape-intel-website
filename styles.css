@@ -1,14 +1,23 @@
 :root {
     --clr-neutral-white: #f2f2f2;
-    --clr-neutral-grey: #B5C3F4;
+    --clr-neutral-grey: hsl(0, 0%, 75%);
     --clr-neutral-black: #141414;
 
     --clr-brand-primary: #d50a0d;
     --clr-brand-secondary: #22223B;
+    --clr-brand-tertiary: #B5C3F4;
 
     --clr-op-primary: rgba(214, 10, 13, 0.4);
 
     --clr-glow: #03e9f4;
+    --clr-glow-dim: rgb(3, 233, 244, 0.5);
+
+    --clr-feat1: #dbeafe;
+    --clr-feat2: #ffedd5;
+    --clr-feat3: #ffe4e6;
+    --clr-feat4: #ccfbf1;
+    --clr-feat5: #f5f5f4;
+    --clr-feat6: #ede9fe;
 
     --ff-body: system-ui, sans-serif;
 
@@ -144,6 +153,25 @@ h2 svg {
     fill: var(--clr-glow);
 }
 
+.sizeH3 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+.sizeSubtext {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+/* text sizing */
+
+.ts-p1 {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0.5em
+}
 
 
 
@@ -275,7 +303,7 @@ h2 svg {
 
 .featuresWrapper {
     display: grid;
-    grid-template-columns: 6em auto;
+    grid-template-columns: 25em auto;
     gap: 2em;
 }
 
@@ -290,28 +318,49 @@ h2 svg {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 1em;
 }
 
 .featureIcon {
-    background-color: #dbeafe;
     border-radius: 1em;
     padding: 1em;
 }
 
-.featureIcon svg {
-    width: 36px;
-    height: 36px;
+.featureIcon img {
+    max-width: 50px;
+    aspect-ratio: 1;
 }
 
-.iconBase {
-    fill: #9bc0fb;
-
+#featIcon1 {
+    background-color: var(--clr-feat1);
 }
 
-.iconDark {
-    fill: #3d82f6;
-
+#featIcon2 {
+    background-color: var(--clr-feat2);
 }
+
+#featIcon3 {
+    background-color: var(--clr-feat3);
+}
+
+#featIcon4 {
+    background-color: var(--clr-feat4);
+}
+
+#featIcon5 {
+    background-color: var(--clr-feat5);
+}
+
+#featIcon6 {
+    background-color: var(--clr-feat6);
+}
+
+
+
+
+
 
 
 
