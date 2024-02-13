@@ -293,7 +293,7 @@ h2 svg {
 }
 
 .featureIcon {
-    background-color: var(--clr-neutral-grey);
+    background-color: #dbeafe;
     border-radius: 1em;
     padding: 1em;
 }
@@ -304,12 +304,12 @@ h2 svg {
 }
 
 .iconBase {
-    fill: blue;
+    fill: #9bc0fb;
 
 }
 
 .iconDark {
-    fill: green;
+    fill: #3d82f6;
 
 }
 
