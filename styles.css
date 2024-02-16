@@ -180,27 +180,32 @@ h2 svg {
 
 .ts-p1 {
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.8;
     margin-bottom: 0.5em
 }
 
 .ts-p2 {
     font-size: 0.8em;
-    line-height: 1.5;
+    line-height: 1.8;
     margin-bottom: 0.5em;
 }
 
-.tw-600 {
-    font-weight: 600;
-}
 
 
-/* text alignment */
+/* text adjustments */
 
 .ta-left {
     text-align: left;
 }
 
+.ta-upper {
+    text-transform: uppercase;
+    text-decoration: underline solid var(--clr-glow);
+}
+
+.tw-600 {
+    font-weight: 600;
+}
 
 /* hero section */
 
@@ -428,8 +433,10 @@ h2 svg {
 .benefitCards {
     display: flex;
     flex-flow: row wrap;
-    gap: 3em;
-    margin-top: 4em;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1em;
+    margin: 4em 0;
 }
 
 .benefitCards * {
@@ -440,16 +447,58 @@ h2 svg {
     display: flex;
     flex-direction: column;
     gap: 2em;
-    flex-basis: 32%;
+    flex: 1;
+    min-width: 25%;
     border-radius: 1em;
-    border: 0.5px solid var(--clr-neutral-black);
     overflow: hidden;
-    padding: 1.5em 1em;
+    padding: 1.5em 2em;
     background-image: 
         linear-gradient(0deg,#060a0f75,#060a0f45),
-        linear-gradient(180deg,#15191f05,#070f1720);
+        linear-gradient(135deg,#15191f05,var(--clr-glow-dim));
 }
 
+.bentoLarge {
+    min-width: 60%;
+    position: relative;
+    flex-direction: row;
+    /* flex: 2 0 60%; */
+    /* flex-wrap: nowrap; */
+}
+
+.bentoLargeContent {
+    width: 50%;
+    transform: none;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* .bentoLargeContent * {
+    display: block;
+} */
+
+#benefitImg1 {
+    width: 350px;
+    object-fit: cover;
+    object-position: 70% 10%;
+    height: 400px;
+    /* border-radius: 2.5em; */
+    margin-left: auto;
+    right: -50px;
+    bottom: -50px;
+    /* transform: translate(0, 5%); */
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    position: absolute;
+}
+
+#benefitImg2 {
+    width: 180px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: 8%;
+}
 
 
 
