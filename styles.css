@@ -50,6 +50,7 @@ body {
 
 
 section ul,
+section ol,
 footer ul,
 nav ul { list-style-type: none; }
 
@@ -149,9 +150,6 @@ h2 {
     box-shadow: 0 8px 24px var(--clr-neutral-black);
 }
 
-/* h2 img {
-    width: 1em;
-} */
 
 h2 svg {
     width: var(--h2-svg-size);
@@ -176,10 +174,24 @@ h2 svg {
 
 /* text sizing */
 
+.ts-h3 {
+    font-size: 1.2em;
+}
+
 .ts-p1 {
     font-size: 1em;
     line-height: 1.5;
     margin-bottom: 0.5em
+}
+
+.ts-p2 {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+}
+
+.tw-600 {
+    font-weight: 600;
 }
 
 
@@ -408,6 +420,36 @@ h2 svg {
 .processCard p {
     grid-area: desc;
 }
+
+
+
+/* benefits section */
+
+.benefitCards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em;
+    margin-top: 4em;
+}
+
+.benefitCards * {
+    color: var(--clr-neutral-white);
+}
+
+.benefitCard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex-basis: 32%;
+    border-radius: 1em;
+    border: 0.5px solid var(--clr-neutral-black);
+    overflow: hidden;
+    padding: 1.5em 1em;
+    background-image: 
+        linear-gradient(0deg,#060a0f75,#060a0f45),
+        linear-gradient(180deg,#15191f05,#070f1720);
+}
+
 
 
 
