@@ -40,12 +40,13 @@
     text-decoration: none;
     color: var(--clr-neutral-black);
 
-    /* border: 1px solid red; */
+    /* border: 1px solid red; linear-gradient(#00000055, #00000055), */
 }
 
 body {
     background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
     background-attachment: fixed;
+    
 }
 
 
@@ -132,6 +133,15 @@ section {
     height: 50px;
 }
 
+.sectionHead {
+    padding: 1em;
+}
+
+.sectionHeadSubtext {
+    width: 75%;
+    margin-inline: auto;
+}
+
 h2 {
     color: var(--clr-neutral-white);
     background-color: rgba(0, 0, 0, 0.2);
@@ -187,6 +197,12 @@ h2 svg {
 .ts-p2 {
     font-size: 0.8em;
     line-height: 1.8;
+    margin-bottom: 0.5em;
+}
+
+.ts-p3{
+    font-size: 1.2em;
+    line-height: 1.2;
     margin-bottom: 0.5em;
 }
 
@@ -345,7 +361,7 @@ h2 svg {
     gap: 2em;
 }
 
-.featureItem {
+.darkCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -504,12 +520,17 @@ h2 svg {
 
 /* about section */
 
+.aboutWrapper p,
+.aboutContent * {
+    color: var(--clr-neutral-white);
+}
+
 .aboutWrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* gap: 2em; */
+    gap: 2em;
 
 }
 
@@ -519,8 +540,15 @@ h2 svg {
     gap: 4em;
 }
 
+.aboutList {
+    list-style: circle outside url(./images/favicon/favicon_L_bg\ red_32x32.png);
+}
 
-
+.aboutList li {
+    margin-bottom: 0.8em;
+    margin-left: 2.5em;
+    padding-left: 1em;
+}
 
 
 
