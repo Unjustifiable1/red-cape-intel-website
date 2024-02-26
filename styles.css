@@ -10,7 +10,7 @@
     --clr-op-primary: rgba(214, 10, 13, 0.4);
 
     --clr-glow: #03e9f4;
-    --clr-glow-dim: rgb(3, 233, 244, 0.5);
+    --clr-glow-dim: #03e9f480;
 
     --clr-feat1: #dbeafe;
     --clr-feat2: #ffedd5;
@@ -120,6 +120,18 @@ section {
 .lightBGtext {
     color: var(--clr-neutral-black);
 }
+
+
+.darkCard {
+    background-color:rgba(0, 0, 0, 0.2);
+
+    /* background-image: 
+        linear-gradient(0deg,#060a0f75,#060a0f45),
+        linear-gradient(135deg,#15191f05,var(--clr-glow-dim)); */
+    padding: 1em;
+    border-radius: 1em;
+}
+
 
 .imgPending {
     border: 1px solid black;
@@ -367,14 +379,12 @@ h2 svg {
     gap: 2em;
 }
 
-.darkCard {
+
+.featureItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    background-color:rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    border-radius: 1em;
 }
 
 .featureIcon {
@@ -556,6 +566,13 @@ h2 svg {
     padding-left: 1em;
 }
 
+.aboutCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
 
 
 /* cta section */
@@ -590,6 +607,29 @@ h2 svg {
     right: 10%;
 }
 
+
+
+
+/* projects section */
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    /* width: 250px; */
+}
+
+.projectImg {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
 
 
 
