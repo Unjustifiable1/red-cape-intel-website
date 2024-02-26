@@ -206,6 +206,12 @@ h2 svg {
     margin-bottom: 0.5em;
 }
 
+.ts-H4-xl {
+    font-size: 2.8em;
+    font-weight: 800;
+
+}
+
 
 
 /* text adjustments */
@@ -549,6 +555,41 @@ h2 svg {
     margin-left: 2.5em;
     padding-left: 1em;
 }
+
+
+
+/* cta section */
+
+.ctaWrapper {
+    background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
+    border-radius: 3em;
+    padding: 5em 8em;
+    margin-top: 3em;
+    position: relative;
+}
+
+.ctaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2em;
+    max-width: 45%;
+    margin-bottom: 5em;
+}
+
+.ctaH2 {
+    margin: 0;
+}
+
+.ctaImg {
+    position: absolute;
+    height: 120%;
+    width: 25%;
+    bottom: 0;
+    right: 10%;
+}
+
 
 
 
