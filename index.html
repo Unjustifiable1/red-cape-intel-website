@@ -40,7 +40,7 @@
                 <div id="heroContent">
                     <h1><span>Transform </span><span>Your Space </span><span>Digitally</span></h1>
                     <p>Red Cape Intel specializes in creating sophisticated, <br>custom-designed websites for businesses <br>to enhance their digital presence.</p>
-                    <a id="heroCTA" href="#contact" class="glowBtn">
+                    <a id="heroCTA" class="glowBtn" onclick="document.getElementById('id01').style.display='block'">
                         <span></span><span></span><span></span><span></span>
                         Get Started
                     </a>
@@ -299,7 +299,7 @@
                     </h2>
                     <h4 class="ts-H4-xl ta-left darkBGtext">Ready to Start?</h4>
                     <p class="ts-p1 ta-left darkBGtext">Contact us now to schedule a consultation and begin the journey to a compelling online presence.</p>
-                    <a href="#contact" class="glowBtn">
+                    <a href="#" class="glowBtn" onclick="document.getElementById('id01').style.display='block'">
                         <span></span><span></span><span></span><span></span>
                         Connect Now
                     </a>
@@ -357,75 +357,84 @@
 
         <section id="contactModal">
 
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Started</button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                Get Started
+            </button>
 
 <div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php" method="post">
     
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
       <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
       
-      <div class="row">
+    <div class="row">
         <div class="col-25">
-          <label for="uname"><b>Your Name</b></label>
+            <label for="uname"><b>Your Name</b></label>
         </div>
         <div class="col-75">
-          <input type="text" placeholder="John Smith" name="uname" required>
+            <input type="text" placeholder="John Smith" name="uname" required>
         </div>
-      </div>
+    </div>
 
-      <div class="row">
-      <div class="col-25">
-        <label for="uemail"><b>Email</b></label>
-      </div>
-      <div class="col-75">
-        <input type="email" placeholder="john@smith.com" name="uemail" required>
-      </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="uemail"><b>Email</b></label>
+        </div>
+        <div class="col-75">
+            <input type="email" placeholder="john@smith.com" name="uemail" required>
+        </div>
     </div>
       
-      <div class="row">
-      <div class="col-25">
-        <label for="uphone"><b>Phone</b></label>
-      </div>
-      <div class="col-75">
-        <input type="text" placeholder="+27 69 420 2023" name="uphone">
-      </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="uphone"><b>Phone</b></label>
+        </div>
+        <div class="col-75">
+            <input type="text" placeholder="+27 69 420 2023" name="uphone">
+        </div>
     </div>
       
-      <div class="row">
-      <div class="col-25">
-        <label for="ucompany"><b>Company Name</b></label>
-      </div>
-      <div class="col-75">
-        <input type="text" placeholder="Smith Industries" name="ucompany">
-      </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="ucompany"><b>Company Name</b></label>
+        </div>
+        <div class="col-75">
+            <input type="text" placeholder="Smith Industries" name="ucompany">
+        </div>
     </div>
       
-      <div class="row">
-      <div class="col-25">
-        <label for="uproject"><b>Already have a website?</b></label>
-      </div>
-      <div class="col-75">
-        <select id="project" name="uproject">
-          <option value="No">No, I need a New Website</option>
-          <option value="Yes">Yes, I need a Redesign or Additional Features</option>
-        </select>
-      </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="uproject"><b>Already have a website?</b></label>
+        </div>
+        <div class="col-75">
+            <select id="project" name="uproject">
+                <option value="No">No, I need a New Website</option>
+                <option value="Yes">Yes, I need a Redesign or Additional Features</option>
+            </select>
+        </div>
     </div>
       
-      <label for="umessage"><b>How can we help you?</b></label>
-      <textarea id="umessage" name="umessage" placeholder="A short message about your business and/or your website." style="height:200px"></textarea>
-        
-      <button type="submit" class="submitbtn">Send Email</button>
+          
+    <div class="row">
+        <div class="col-25">
+            <label for="umessage"><b>How can we help you?</b></label>
+        </div>
+        <div class="col-75">
+            <textarea id="umessage" name="umessage" placeholder="A short message about your business and/or your website." style="height:150px"></textarea>
+        </div>
+    </div>
+
+    <button type="submit" class="submitbtn">Send Email</button>
       
-      <label>
+    <label>
         <input type="checkbox" checked="checked" name="uconsent" required> I consent to being contacted via email or called at the provided details. <br>PS: We're committed to sending essential communication only and will never send unsolicited spam.
-      </label>
+    </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
