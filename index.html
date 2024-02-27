@@ -355,6 +355,87 @@
             </h2>
         </section>
 
+        <section id="contactModal">
+
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Started</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="uname"><b>Your Name</b></label>
+        </div>
+        <div class="col-75">
+          <input type="text" placeholder="John Smith" name="uname" required>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="col-25">
+        <label for="uemail"><b>Email</b></label>
+      </div>
+      <div class="col-75">
+        <input type="email" placeholder="john@smith.com" name="uemail" required>
+      </div>
+    </div>
+      
+      <div class="row">
+      <div class="col-25">
+        <label for="uphone"><b>Phone</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="+27 69 420 2023" name="uphone">
+      </div>
+    </div>
+      
+      <div class="row">
+      <div class="col-25">
+        <label for="ucompany"><b>Company Name</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Smith Industries" name="ucompany">
+      </div>
+    </div>
+      
+      <div class="row">
+      <div class="col-25">
+        <label for="uproject"><b>Already have a website?</b></label>
+      </div>
+      <div class="col-75">
+        <select id="project" name="uproject">
+          <option value="No">No, I need a New Website</option>
+          <option value="Yes">Yes, I need a Redesign or Additional Features</option>
+        </select>
+      </div>
+    </div>
+      
+      <label for="umessage"><b>How can we help you?</b></label>
+      <textarea id="umessage" name="umessage" placeholder="A short message about your business and/or your website." style="height:200px"></textarea>
+        
+      <button type="submit" class="submitbtn">Send Email</button>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="uconsent" required> I consent to being contacted via email or called at the provided details. <br>PS: We're committed to sending essential communication only and will never send unsolicited spam.
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+        </section>
+
     </main>
     
     <footer>
