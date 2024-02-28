@@ -12,6 +12,8 @@
     --clr-glow: #03e9f4;
     --clr-glow-dim: #03e9f480;
 
+    --clr-glow-yellow: #DCFC19;
+
     --clr-feat1: #dbeafe;
     --clr-feat2: #ffedd5;
     --clr-feat3: #ffe4e6;
@@ -597,7 +599,7 @@ h2 svg {
     max-width: 45%;
 }
 
-.ctaH2 {
+.ta-leftH2 {
     margin: 0;
 }
 
@@ -666,8 +668,8 @@ label b {
 
 /* Set a style for all buttons */
 button {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--clr-glow);
+    color: var(--clr-neutral-black);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -683,6 +685,11 @@ button {
   /* Extra styles for the submit button */
   .submitbtn {
     float: right;
+  }
+
+
+  .uconsent {
+    font-size: 0.8em;
   }
   
   /* Extra styles for the cancel button */
@@ -727,9 +734,14 @@ button {
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
+    padding: 2em;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 4px solid var(--clr-glow);
+    border-radius: 2em;
+    width: 60%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 0 5px var(--clr-glow),
+                0 0 25px var(--clr-glow),
+                0 0 60px var(--clr-glow);
   }
   
   /* The Close Button (x) */
@@ -796,12 +808,92 @@ button {
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, .col-40, .col-60, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
 
+
+
+/* contact section */
+
+#id02 *, .contactHeader *, .contactGrid * {
+    text-align: left;
+}
+
+.contactWrapper {
+    border-radius: 3em;
+    box-shadow: 0 0 16px black;
+    padding: 2em;
+}
+
+
+ /* Floating column: 40% width */
+ .col-40 {
+    float: left;
+    width: 40%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column: 60% width */
+  .col-60 {
+    float: left;
+    width: 60%;
+    margin-top: 6px;
+  }
+
+
+/* contact details */
+
+#contactDetails {
+    background-color: var(--clr-brand-primary);
+    border-radius: 2em;
+    padding: 3em 2.5em;
+    
+}
+
+.contactHeader *, .contactGrid * {
+    color: var(--clr-neutral-white);
+}
+
+.contactHeader {
+    margin-bottom: 1.5em;
+}
+
+
+.contactHeader img {
+    width: 3em;
+    aspect-ratio: 1;
+    float: left;
+}
+
+.contactItem {
+    margin-bottom: 0.8em;
+}
+
+
+.contactIcon {
+    width: 3em;
+    height: 3em;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 1em;
+}
+
+.contactIcon img {
+    width: 80%;
+}
+
+
+
+/* contact form - #id02 */
+
+#id02 {
+    padding-left: 3em;
+}
 
 
 
