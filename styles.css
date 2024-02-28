@@ -581,7 +581,7 @@ h2 svg {
 /* cta section */
 
 .ctaWrapper {
-    background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
+    background-color: var(--clr-brand-primary);
     border-radius: 3em;
     padding: 4em 8em;
     margin-top: 3em;
