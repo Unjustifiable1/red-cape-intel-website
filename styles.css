@@ -48,7 +48,6 @@
 body {
     background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
     background-attachment: fixed;
-    
 }
 
 
@@ -282,19 +281,34 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
+    text-align: left;
+
+    * {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
 
     .heroH1 {
         font-size: 3em;
         font-weight: 700;
-        position: absolute;
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        z-index: 10;
+        transform: translate(-50%, -50%); */
+        z-index: 2;
+        color: var(--clr-neutral-white);
+        text-shadow: 0 0 8px black;
     }
 
     .heroImg {
         width: 500px;
-        position: absolute;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
     }
 }
 
