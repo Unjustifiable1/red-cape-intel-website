@@ -156,7 +156,7 @@ section {
     margin-inline: auto;
 }
 
-h2 {
+.sectionH2 {
     color: var(--clr-neutral-white);
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 1em;
@@ -175,7 +175,7 @@ h2 {
 }
 
 
-h2 svg {
+.sectionH2 svg {
     width: var(--h2-svg-size);
     height: var(--h2-svg-size);
 }
@@ -260,7 +260,7 @@ h2 svg {
     gap: 2rem;
 }
 
-#heroContent h1 span {
+.heroH2 span {
     display: block;
     text-align: left;
     font-size: 3em;
@@ -268,7 +268,7 @@ h2 svg {
     line-height: 1.05em;
 }
 
-#heroContent h1 span:nth-child(2) {
+.heroH2 span:nth-child(2) {
     color: var(--clr-glow);
 }
 
@@ -277,8 +277,31 @@ h2 svg {
     text-align: left;
 }
 
+.heroCarousel {
+    border: 1px solid lime;
+    width: 100%;
+    height: 100%;
+    position: relative;
 
+    .heroH1 {
+        font-size: 3em;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+    }
 
+    .heroImg {
+        width: 500px;
+        position: absolute;
+    }
+}
+
+/* .heroImg {
+    width: 500px;
+
+} */
 
 
 /* glow buttons */
