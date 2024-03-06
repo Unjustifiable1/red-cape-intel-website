@@ -950,6 +950,48 @@ button {
 
 
 
+/* footer section */
+
+.footerContent {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 2em;
+
+    * {
+        color: var(--clr-neutral-white);
+    }
+
+    .footerCol1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        
+
+        .footerLogo {
+            img {
+                width: 100%;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        .footerServices {
+            border-left: 4px solid var(--clr-glow);
+        }
+    }
+}
+
+.footerH3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--clr-glow);
+    margin-bottom: 1em;
+}
+
+
+
 /* header and footer defaults */
 
 header {
@@ -960,7 +1002,7 @@ header {
 footer {
     background-color: var(--clr-brand-secondary);
     color: var(--clr-neutral-grey);
-    padding: 0.25em 10%;
+    padding: 2em 10%;
 }
 
 
@@ -971,5 +1013,5 @@ footer {
     align-items: center;
     gap: 0.5rem;
 }
-.attribution span, .attribution a { font-size: 11px; }
+.attribution span, .attribution a { font-size: 1em; color: white; }
 .attribution a { color: hsl(115, 93%, 59%); }
