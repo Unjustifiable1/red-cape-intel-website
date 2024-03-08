@@ -503,6 +503,12 @@ section {
 
 /* process section */
 
+#process {
+    .h2svg {
+        filter: drop-shadow(0 0 1px);
+    }
+}
+
 #processContainer {
     display: flex;
     justify-content: space-between;
