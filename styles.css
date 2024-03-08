@@ -658,9 +658,12 @@ section {
     border-radius: 3em;
     padding: 4em 8em;
     margin-top: 3em;
-    position: relative;
     height: 80dvh;
     box-shadow: 0 0 8px black;
+    display: flex;
+    gap: 4em;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .ctaContainer {
@@ -677,12 +680,11 @@ section {
 }
 
 .ctaImg {
-    position: absolute;
-    height: 120%;
-    width: 25%;
-    bottom: 0;
-    right: 10%;
+    width: 90%;
 }
+
+
+
 
 
 
