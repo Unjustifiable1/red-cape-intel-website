@@ -704,25 +704,18 @@ section {
 .portfolioWrapper {
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
 }
 
 .projectContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-}
-
-.projectCard {
-    display: flex;
-    flex-direction: column;
+    gap: 3em;
 }
 
 .projectImg {
-    width: 100%;
-    height: 280px;
-    overflow: hidden;
+    max-width: 220px;
 }
 
 
