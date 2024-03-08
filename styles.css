@@ -45,6 +45,10 @@
     /* border: 1px solid red; linear-gradient(#00000055, #00000055), */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
     background-attachment: fixed;
@@ -59,12 +63,22 @@ nav ul { list-style-type: none; }
 
 /* Navigation */
 
+#header {
+    background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.2s;
+    z-index: 100;
+}
+
 nav {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), var(--clr-brand-secondary));
+    padding: 0.5em 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2em;
-    padding: 0.5em;
 }
 
 
@@ -92,10 +106,12 @@ nav li {
 #navLogoContainer {
     border: 2px solid transparent;
     height: 5em;
+    transition: 0.2s;
 }
 
 #navLogoImg {
-    height: 5em;
+    height: 100%;
+    transition: 0.2s;
 }
 
 
@@ -270,6 +286,7 @@ section {
 #hero {
     padding-bottom: 8em;
     overflow: hidden;
+    margin-top: 6em;
 }
 
 #hero .wrapper {
@@ -1034,11 +1051,6 @@ button {
 
 
 /* header and footer defaults */
-
-header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), var(--clr-brand-secondary));
-    padding: 0.25em 10%;
-}
 
 footer {
     background-color: var(--clr-brand-secondary);
