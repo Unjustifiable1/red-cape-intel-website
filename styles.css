@@ -512,7 +512,7 @@ section {
 #processContainer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 2.5em;
 }
 
@@ -659,26 +659,29 @@ section {
 
 /* cta section */
 
+/* #ctaSection * {
+    border: 1px solid green;
+} */
+
 .ctaWrapper {
     background-color: var(--clr-brand-primary);
     border-radius: 3em;
     padding: 4em 8em;
-    margin-top: 3em;
     height: 80dvh;
     box-shadow: 0 0 8px black;
-    display: flex;
-    gap: 4em;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
     align-items: center;
 }
 
-.ctaContainer {
+.ctaContent {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 1.2em;
-    max-width: 45%;
+    gap: 1.5em;
+    flex: 1 0 40dvw;
 }
 
 .ta-leftH2 {
@@ -686,7 +689,8 @@ section {
 }
 
 .ctaImg {
-    width: 90%;
+    width: 100%;
+    scale: 1.5;
 }
 
 
