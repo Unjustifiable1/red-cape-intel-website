@@ -118,6 +118,12 @@ section {
     border-radius: 1em;
 }
 
+.darkCard:hover {
+    box-shadow: 0 0 5px var(--clr-neutral-black),
+                0 0 25px var(--clr-glow);
+}
+
+
 
 .imgPending {
     border: 1px solid black;
@@ -261,11 +267,17 @@ section {
 
 /* hero section */
 
+#hero {
+    padding-bottom: 8em;
+    overflow: hidden;
+}
+
 #hero .wrapper {
+    /* min-height: 80dvh; */
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
+    gap: 4em;
 }
 
 #heroContent {
@@ -291,6 +303,10 @@ section {
 #heroContent p {
     width: 90%;
     text-align: left;
+    /* background-color: #00000025;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    color: var(--clr-neutral-white); */
 }
 
 .heroCarousel {
@@ -303,14 +319,14 @@ section {
     * {
         position: absolute;
         top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         
     }
 
     .heroH1 {
-        font-size: 3em;
+        font-size: 4em;
         font-weight: 700;
+        left: 50%;
         /* position: absolute;
         top: 50%;
         left: 50%;
@@ -320,18 +336,12 @@ section {
     }
 
     .heroImg {
-        width: 500px;
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
+        height: 75dvh;
+        left: 65%;
+        border-radius: 2em;
     }
 }
 
-/* .heroImg {
-    width: 500px;
-
-} */
 
 
 /* glow buttons */
@@ -788,10 +798,10 @@ button {
     background-color: #fefefe;
     padding: 2em;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 4px solid var(--clr-glow);
+    /* border: 4px solid var(--clr-glow); */
     border-radius: 2em;
     width: 60%; /* Could be more or less, depending on screen size */
-    box-shadow: 0 0 5px var(--clr-glow),
+    box-shadow: 0 0 5px var(--clr-neutral-black),
                 0 0 25px var(--clr-glow),
                 0 0 60px var(--clr-glow);
   }
