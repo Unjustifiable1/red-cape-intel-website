@@ -283,6 +283,10 @@ section {
 
 /* hero section */
 
+#hero * {
+    border: 1px solid lime;
+}
+
 #hero {
     padding-bottom: 8em;
     overflow: hidden;
@@ -320,10 +324,6 @@ section {
 #heroContent p {
     width: 90%;
     text-align: left;
-    /* background-color: #00000025;
-    padding: 0.75em;
-    border-radius: 0.5em;
-    color: var(--clr-neutral-white); */
 }
 
 .heroCarousel {
@@ -344,18 +344,14 @@ section {
         font-size: 4em;
         font-weight: 700;
         left: 50%;
-        /* position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-        z-index: 2;
         color: var(--clr-neutral-white);
     }
 
     .heroImg {
-        height: 75dvh;
+        height: 120%;
         left: 65%;
         border-radius: 2em;
+        z-index: -2;
     }
 }
 
