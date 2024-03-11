@@ -27,6 +27,8 @@
     --pad: 0.25em;
 
     --h2-svg-size: 2em;
+
+    --pg-margin: 10%;
 }
 
 
@@ -42,7 +44,7 @@
     text-decoration: none;
     color: var(--clr-neutral-black);
 
-    /* border: 1px solid red; linear-gradient(#00000055, #00000055), */
+    border: 1px solid lime;
 }
 
 html {
@@ -52,6 +54,7 @@ html {
 body {
     background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
     background-attachment: fixed;
+    background-position: top center;
 }
 
 
@@ -65,6 +68,7 @@ nav ul { list-style-type: none; }
 
 #header {
     background-image: url(./images/logo/NAVandHERO_IMAGE_bg\ red\ cape_1920x1080.png);
+    background-position: top center;
     position: fixed;
     width: 100%;
     top: 0;
@@ -74,11 +78,11 @@ nav ul { list-style-type: none; }
 
 nav {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1), var(--clr-brand-secondary));
-    padding: 0.5em 10%;
+    padding: 0.5em var(--pg-margin);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 1em;
 }
 
 
@@ -119,8 +123,8 @@ nav li {
 /* section control */
 
 section {
-    padding: 6em 10%;
-    min-height: 35dvh;;
+    padding: 6em var(--pg-margin);
+    min-height: 35dvh;
 }
 
 
@@ -298,7 +302,7 @@ section {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    gap: 4em;
+    gap: 2em;
 }
 
 #heroContent {
@@ -307,6 +311,7 @@ section {
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
+    min-width: 400px;
 }
 
 .heroH2 span {
@@ -322,7 +327,7 @@ section {
 }
 
 #heroContent p {
-    width: 90%;
+    width: 100%;
     text-align: left;
 }
 
@@ -336,7 +341,6 @@ section {
     * {
         position: absolute;
         top: 50%;
-        transform: translate(-50%, -50%);
         
     }
 
@@ -344,14 +348,16 @@ section {
         font-size: 4em;
         font-weight: 700;
         left: 50%;
+        transform: translate(-50%, -50%);
         color: var(--clr-neutral-white);
     }
 
     .heroImg {
         height: 120%;
-        left: 65%;
+        left: 0;
         border-radius: 2em;
         z-index: -2;
+        transform: translateY(-50%);
     }
 }
 
@@ -1056,7 +1062,7 @@ button {
 footer {
     background-color: var(--clr-brand-secondary);
     color: var(--clr-neutral-grey);
-    padding: 2em 10%;
+    padding: 2em var(--pg-margin);
 }
 
 
@@ -1069,3 +1075,39 @@ footer {
 }
 .attribution span, .attribution a { font-size: 1em; color: white; }
 .attribution a { color: hsl(115, 93%, 59%); }
+
+
+
+
+
+/* Media Queries */
+
+/* 320px (small phones) */
+@media only screen and (max-width: 400px) {
+    .featuresContainer {
+        grid-template-columns: auto;
+
+    }
+}
+
+
+/* 768px (tablets) */
+@media only screen and (max-width: 800px) {
+    :root {
+        --pg-margin: 5%;
+    }
+
+    * {
+        font-size: 12px;
+    }
+
+    .featuresContainer {
+        grid-template-columns: auto auto;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
