@@ -332,13 +332,10 @@ section {
     height: 100%;
     position: relative;
 
-    * {
-        position: absolute;
-        top: 50%;
-        
-    }
 
     .heroH1 {
+        position: absolute;
+        top: 50%;
         font-size: 4em;
         font-weight: 700;
         left: 50%;
@@ -346,13 +343,49 @@ section {
         color: var(--clr-neutral-white);
     }
 
-    .heroImg {
+    /* .heroImg {
+        position: absolute;
+        top: 50%;
         height: 120%;
         left: 0;
         border-radius: 2em;
         z-index: -2;
         transform: translateY(-50%);
+    } */
+
+
+    .hero-slideshow-container {
+        max-width: 1000px;
+        width: 150%;
+        height: 120%;
+        border-radius: 2em;
+        position: absolute;
+        z-index: -2;
+        left: 0; 
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
     }
+
+    .heroSlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle; 
+        width:100%;
+    }
+
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    } 
 }
 
 
