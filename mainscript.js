@@ -45,3 +45,40 @@ function showSlides() {
   // dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+
+
+
+
+// form submission handler
+
+window.addEventListener("load", function() {
+  const form1 = document.getElementById('form-id01');
+  form1.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form1);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success! We'll contact you soon. Thank you!");
+    })
+  });
+});
+
+window.addEventListener("load", function() {
+  const form2 = document.getElementById('form-id02');
+  form2.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form2);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success! We'll contact you soon. Thank you!");
+    })
+  });
+});
