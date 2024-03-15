@@ -599,7 +599,7 @@ section {
 .benefitCard {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     flex: 1;
     min-width: 25%;
     border-radius: 1em;
@@ -608,6 +608,11 @@ section {
     background-image: 
         linear-gradient(0deg,#060a0f75,#060a0f45),
         linear-gradient(135deg,#15191f05,var(--clr-glow-dim));
+
+    .benefitDropper * {
+        font-size: 0.8rem;
+        text-align: left;
+    }
 }
 
 .bentoLarge {
@@ -627,9 +632,9 @@ section {
     gap: 2em;
 }
 
-/* .bentoLargeContent * {
-    display: block;
-} */
+.benefitHide {
+    display: none;
+}
 
 #benefitImg1 {
     width: 350px;

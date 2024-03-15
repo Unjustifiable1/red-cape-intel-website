@@ -32,24 +32,19 @@ showSlides();
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("heroSlides");
-  // let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
-  // for (i = 0; i < dots.length; i++) {
-  //   dots[i].className = dots[i].className.replace(" active", "");
-  // }
   slides[slideIndex-1].style.display = "block";  
-  // dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
 
 
 
-// form submission handler
+// form submission handler - Home Page CTA/Modal Form
 
 window.addEventListener("load", function() {
   const form1 = document.getElementById('form-id01');
@@ -67,6 +62,9 @@ window.addEventListener("load", function() {
   });
 });
 
+
+// form submission handler - Home Page Contact Section Form
+
 window.addEventListener("load", function() {
   const form2 = document.getElementById('form-id02');
   form2.addEventListener("submit", function(e) {
@@ -82,3 +80,35 @@ window.addEventListener("load", function() {
     })
   });
 });
+
+
+
+// benefit dropdowns
+
+let charNum = 50;
+let benefitContents = document.querySelectorAll(".benefitContent");
+
+benefitContents.forEach(content => {
+  // if content length is less than charNum then hide ReadMore btn
+  if (content.textContent.length < charNum) {
+    content.nextElementSibling.style.display = "none";
+  }
+  else {
+    let strongNum = content.textContent.indexOf(':') + 1;
+    let strongText = content.textContent.slice(0, strongNum);
+    strongText = `<strong class="tw-600 ta-upper">${strongText}</strong>`
+
+    let subText = content.textContent.slice(strongNum).trim();
+    let displayText = subText.slice(0,charNum);
+    let moreText = subText.slice(charNum);
+    content.innerHTML = `${strongText} ${displayText}<span class="benefitDots">...</span><span class="benefitHide benefitMore">${moreText}</span>`;
+  }
+});
+
+function readMore(btn) {
+  let benefitPost = btn.parentElement;
+  benefitPost.querySelector(".benefitDots").classList.toggle("benefitHide");
+  benefitPost.querySelector(".benefitMore").classList.toggle("benefitHide");
+  btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More";
+}
+
