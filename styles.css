@@ -604,15 +604,30 @@ section {
     min-width: 25%;
     border-radius: 1em;
     overflow: hidden;
+    /* position: relative; */
     padding: 1.5em 2em;
     background-image: 
         linear-gradient(0deg,#060a0f75,#060a0f45),
         linear-gradient(135deg,#15191f05,var(--clr-glow-dim));
 
-    .benefitDropper * {
-        font-size: 0.8rem;
-        text-align: left;
+    .benefitDropper {
+
+        * {
+            font-size: 0.8rem;
+            text-align: left;
+        }
+
+        button {
+            color: var(--clr-neutral-black);
+            font-size: 1.2em;
+            float: left;
+            width: 1.4em;
+            height: 1.4em;
+            text-align: center;
+            padding: 1px;
+        }
     }
+
 }
 
 .bentoLarge {
