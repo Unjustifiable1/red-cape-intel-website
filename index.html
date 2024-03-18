@@ -425,6 +425,17 @@
                     <form id="form-id02" class="contactFormContent" action="https://script.google.com/macros/s/AKfycbyZu4DwC04akztWSrhGQhbWSCMfgwy_4u3fTU-2PLO-Rw2s6udBfbvC7JoBqiggKXaG9A/exec" method="POST">
     
                         <div class="container">
+
+                            <div class="row formID">
+                                <div class="col-25">
+                                    <label for="formName"><b>formName</b></label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="formName" name="formName">
+                                        <option value="form-id02-Contact Home">form-id02</option>
+                                    </select>
+                                </div>
+                            </div>
     
                             <div class="row">
                                 <div class="col-25">
@@ -432,6 +443,15 @@
                                 </div>
                                 <div class="col-75">
                                     <input type="text" placeholder="John Smith" id="f1name" name="f1name" required>
+                                </div>
+                            </div>
+    
+                            <div class="row crockpot">
+                                <div class="col-25">
+                                    <label for="email"><b>Email</b></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="email" placeholder="john@smith.com" id="email" name="email">
                                 </div>
                             </div>
     
@@ -444,12 +464,21 @@
                                 </div>
                             </div>
     
+                            <div class="row crockpot">
+                                <div class="col-25">
+                                    <label for="phone"><b>Phone</b></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" placeholder="+27 21 555 1234" id="phone" name="phone">
+                                </div>
+                            </div>
+    
                             <div class="row">
                                 <div class="col-25">
                                     <label for="f1phone"><b>Phone</b></label>
                                 </div>
                                 <div class="col-75">
-                                    <input type="text" placeholder="+27 21 555 1234" id="f1phone" name="f1phone">
+                                    <input type="text" placeholder="+27 21 555 1234" id="f1phone" name="f1phone" required>
                                 </div>
                             </div>
     
@@ -465,7 +494,7 @@
                             <button type="submit" class="submitbtn">Send Email</button>
     
                             <label class="fconsent" for="f1consent">
-                                <input type="checkbox" checked="checked" id="f1consent" name="f1consent" required> I consent to being contacted at the provided details. <br>PS: We're committed to sending essential communication only <br>and will never send unsolicited spam.
+                                <input type="checkbox" value="consented" checked id="f1consent" name="f1consent" required> I consent to being contacted at the provided details. <br>PS: We're committed to sending essential communication only <br>and will never send unsolicited spam.
                             </label>
                         </div>
                         
@@ -492,12 +521,32 @@
 
                     <div class="container">
 
+                        <div class="row formID">
+                            <div class="col-25">
+                                <label for="formName"><b>formName</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select id="formName" name="formName">
+                                    <option value="form-id01-Modal Home">form-id01</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-25">
                                 <label for="f1name"><b>Your Name</b></label>
                             </div>
                             <div class="col-75">
                                 <input type="text" placeholder="John Smith" id="f1name" name="f1name" required>
+                            </div>
+                        </div>
+
+                        <div class="row crockpot">
+                            <div class="col-25">
+                                <label for="email"><b>Email</b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" placeholder="john@smith.com" id="email" name="email">
                             </div>
                         </div>
 
@@ -510,12 +559,21 @@
                             </div>
                         </div>
 
+                        <div class="row crockpot">
+                            <div class="col-25">
+                                <label for="phone"><b>Phone</b></label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" placeholder="+27 21 555 1234" id="phone" name="phone">
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-25">
                                 <label for="f1phone"><b>Phone</b></label>
                             </div>
                             <div class="col-75">
-                                <input type="text" placeholder="+27 21 555 1234" id="f1phone" name="f1phone">
+                                <input type="text" placeholder="+27 21 555 1234" id="f1phone" name="f1phone" required>
                             </div>
                         </div>
 
@@ -553,7 +611,7 @@
                         <button type="submit" class="submitbtn">Send Email</button>
 
                         <label class="fconsent" for="f1consent">
-                            <input type="checkbox" checked="checked" id="f1consent" name="f1consent" required> I consent to being contacted at the provided details. <br>PS: We're committed to sending essential communication only <br>and will never send unsolicited spam.
+                            <input type="checkbox" value="consented" checked id="f1consent" name="f1consent" required> I consent to being contacted at the provided details. <br>PS: We're committed to sending essential communication only <br>and will never send unsolicited spam.
                         </label>
                     </div>
 
