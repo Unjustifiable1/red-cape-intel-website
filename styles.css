@@ -187,12 +187,9 @@ section {
 }
 
 
-.sectionH2 svg {
+.h2svg {
     width: var(--h2-svg-size);
     height: var(--h2-svg-size);
-}
-
-.h2svg {
     fill: var(--clr-glow);
 }
 
@@ -1002,14 +999,18 @@ button {
 
 .contactHeader {
     margin-bottom: 1.5em;
+
+    h4 {
+        text-align: center;
+    }
 }
 
 
-.contactHeader img {
+/* .contactHeader img {
     width: 3em;
     aspect-ratio: 1;
     float: left;
-}
+} */
 
 .contactItem {
     margin-bottom: 0.8em;
