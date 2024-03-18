@@ -1021,13 +1021,15 @@ button {
     height: 3em;
     padding: 8px;
     border: 1px solid white;
-    border-radius: 100%;
+    border-radius: 100em;
     overflow: hidden;
     margin-right: 1em;
 }
 
 .contactIcon img {
     width: 100%;
+    max-width: 30px;
+    aspect-ratio: 1;
 }
 
 
