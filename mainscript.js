@@ -114,3 +114,33 @@ function readMore(btn) {
   ccode==8595 ? btn.innerHTML = "&uarr;" : btn.innerHTML = "&darr;";
 }
 
+// benefit dropdowns
+
+// let charNum = 60;
+// let benefitCards = document.querySelectorAll(".benefitCard");
+
+// benefitContents.forEach(content => {
+//   // if content length is less than charNum then hide ReadMore btn
+//   // if (content.textContent.length < charNum) {
+//   //   content.nextElementSibling.style.display = "none";
+//   // }
+//   // else {
+//     let strongNum = content.textContent.indexOf(':') + 1;
+//     let strongText = content.textContent.slice(0, strongNum);
+//     strongText = `<strong class="tw-600 ta-upper">${strongText}</strong>`
+
+//     let subText = content.textContent.slice(strongNum).trim();
+//     let displayText = subText.slice(0,charNum);
+//     let moreText = subText.slice(charNum);
+//     content.innerHTML = `${strongText} ${displayText}<span class="benefitDots">...</span><span class="benefitHide benefitMore">${moreText}</span>`;
+//   // }
+// });
+
+function readMore2(btn) {
+  let benefitPost = btn.querySelector('.benefitContent');
+  benefitPost.querySelector(".benefitDots").classList.toggle("benefitHide");
+  benefitPost.querySelector(".benefitMore").classList.toggle("benefitHide");
+  
+  // let ccode= btn.innerHTML.charCodeAt(0);
+  // ccode==8595 ? btn.innerHTML = "&uarr;" : btn.innerHTML = "&darr;";
+}

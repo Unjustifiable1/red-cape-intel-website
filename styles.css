@@ -604,6 +604,7 @@ section {
     min-width: 25%;
     border-radius: 1em;
     overflow: hidden;
+    cursor: pointer;
     /* position: relative; */
     padding: 1.5em 2em;
     background-image: 
