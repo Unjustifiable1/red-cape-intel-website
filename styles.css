@@ -379,8 +379,7 @@ section {
     }
 
     img {
-        vertical-align: middle; 
-        width:150%;
+        width:100%;
     }
 
 
@@ -390,7 +389,7 @@ section {
     }
     
     @keyframes fade {
-        from {opacity: .4} 
+        from {opacity: .2} 
         to {opacity: 1}
     } 
 }
