@@ -10,7 +10,7 @@
     --clr-op-primary: rgba(214, 10, 13, 0.4);
 
     --clr-glow: #50C878;
-    --clr-glow-dim: #03e9f480;
+    --clr-glow-dim: #50c878b0;
 
     --clr-glow-yellow: #DCFC19;
 
@@ -168,22 +168,27 @@ section {
     margin-inline: auto;
 }
 
+.sectionH2wrapper {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    border-bottom: 4px solid var(--clr-glow);
+    border-radius: .5em .5em 2em 2em;
+    box-shadow: 0 8px 24px var(--clr-neutral-black);
+    margin-bottom: 2.5em;
+    margin-inline: auto;
+
+}
+
 .sectionH2 {
     color: var(--clr-neutral-white);
-    background-color: rgba(0, 0, 0, 0.2);
     font-size: 1em;
     width: fit-content;
     text-transform: uppercase;
-    border-bottom: 4px solid var(--clr-glow);
-    border-radius: .5em .5em 2em 2em;
     padding: 0.5em 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    margin-bottom: 2.5em;
-    margin-inline: auto;
-    box-shadow: 0 8px 24px var(--clr-neutral-black);
 }
 
 
@@ -541,9 +546,15 @@ section {
 /* process section */
 
 #process {
-    .sectionH2 {
-        background-image: var(--clr-brand-primary);
-        background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--clr-brand-secondary);
+
+    .sectionH2wrapper {
+        background-color: var(--clr-brand-secondary);
+        overflow: hidden;
+
+        .sectionH2 {
+            background-color:rgba(0, 0, 0, 0.2);
+        }
     }
 }
 
@@ -561,22 +572,26 @@ section {
     gap: 0.5em 1.5em;
     grid-template-areas:    "num step"
                             "num desc";
+
+    div {
+        color: var(--clr-brand-secondary);
+        grid-area: num;
+        font-size: 4em;
+        border-radius: 2em 2em 0 0;
+        background-image: linear-gradient(to bottom, var(--clr-glow), transparent);
+    }
+
+    h3 {
+        grid-area: step;
+        color: var(--clr-neutral-white);
+    }
+
+    p {
+        grid-area: desc;
+        color: var(--clr-neutral-white);
+    }
 }
 
-.processCard div {
-    grid-area: num;
-    font-size: 4em;
-    border-radius: 2em 2em 0 0;
-    background-image: linear-gradient(to bottom, var(--clr-glow), transparent);
-}
-
-.processCard h3 {
-    grid-area: step;
-}
-
-.processCard p {
-    grid-area: desc;
-}
 
 
 
