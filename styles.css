@@ -755,10 +755,27 @@ section {
 
 
 /* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
+/* cta section */
 
-/* #ctaSection * {
-    border: 1px solid green;
-} */
+#ctaSection * {
+    border: 1px solid lime;
+}
 
 .ctaWrapper {
     background-color: var(--clr-brand-primary);
@@ -767,28 +784,43 @@ section {
     height: 80dvh;
     box-shadow: 0 0 8px black;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-template-areas:    "heading imge"
+                            "cta imge";
     gap: 1em;
     align-items: center;
+
+
+    .ctaHeading {
+        grid-area: heading;
+        margin: 0;
+    }
+
+
+    .ctaContent {
+        grid-area: cta;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5em;
+        flex: 1 0 40dvw;
+    }
+
+
+    .ctaImgWrapper {
+        grid-area: imge;
+    }
+
+
+    .ctaImg {
+        width: 100%;
+        scale: 1.5;
+    }
 }
 
-.ctaContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1.5em;
-    flex: 1 0 40dvw;
-}
-
-.ta-leftH2 {
-    margin: 0;
-}
-
-.ctaImg {
-    width: 100%;
-    scale: 1.5;
-}
 
 
 
@@ -796,6 +828,24 @@ section {
 
 
 
+
+
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
+/* portfolio section */
 /* portfolio section */
 
 .portfolioWrapper {
@@ -1295,6 +1345,30 @@ footer {
             }
         } */
     }
+
+
+    #ctaSection {
+        .ctaWrapper {
+            grid-template-areas:    "heading"
+                                    "imge"
+                                    "cta";
+
+            .ctaContent {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .ctaHeading {
+                margin-inline: auto;
+            }
+            .ctaImg {
+                width: 50%;
+                scale: 1;
+                margin-inline: auto 0;
+            }
+        }
+    }
+
 
     [class*="col-"] {
         width: 100%;
