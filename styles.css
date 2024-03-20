@@ -384,8 +384,7 @@ section {
 
 
     .fade {
-        animation-name: fade;
-        animation-duration: 2s;
+        animation: 5s fade;
     }
     
     @keyframes fade {
@@ -689,6 +688,22 @@ section {
 
 
 /* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
+/* about section */
 
 .aboutWrapper p,
 .aboutContent * {
@@ -706,18 +721,10 @@ section {
 
 .aboutContent {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4em;
-}
-
-.aboutList {
-    list-style: circle outside url(./images/favicon/favicon_L_bg\ red_32x32.png);
-}
-
-.aboutList li {
-    margin-bottom: 0.8em;
-    margin-left: 2.5em;
-    padding-left: 1em;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3em;
+    
 }
 
 .aboutCard {
@@ -726,6 +733,24 @@ section {
     align-items: center;
     gap: 1em;
 }
+
+
+.aboutList li {
+    margin-bottom: 1.5em;
+    margin-left: 2.5em;
+    padding-left: 1em;
+    position: relative;
+
+    .aboutLiIcon {
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        left: -32px;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+}
+
 
 
 
@@ -1253,7 +1278,7 @@ footer {
 
     #processContainer {
         flex-direction: column;
-        gap: 0;
+        gap: 2em;
 
         /* .processCard {
             display: flex;

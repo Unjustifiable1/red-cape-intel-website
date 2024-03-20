@@ -27,7 +27,6 @@ function scrollFunction() {
 // hero automatic slideshow
 
 let slideIndex = 0;
-showSlides();
 
 function showSlides() {
   let i;
@@ -41,6 +40,7 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
+showSlides();
 
 
 
