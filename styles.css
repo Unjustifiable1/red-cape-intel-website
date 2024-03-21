@@ -863,13 +863,32 @@ section {
 }
 
 .projectImg {
-    /* flex: 30%; */
     width: 30%;
     max-width: 220px;
 }
 
 
 
+
+
+
+
+
+
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
+/* contact form - modal #id01 */
 /* contact form - modal #id01 */
 
 /* reset text alignment for entire form */
@@ -881,7 +900,7 @@ section {
 input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 4px 0 8px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -912,7 +931,8 @@ button {
   }
   
   button:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
+    scale: 0.8;
   }
   
   
@@ -1010,13 +1030,6 @@ button {
     to {transform: scale(1)}
   }
   
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    
-    .cancelbtn {
-       width: 100%;
-    }
-  }
   
   
   /* Floating column for labels: 25% width */
@@ -1040,16 +1053,30 @@ button {
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, .col-40, .col-60, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
 
 
 
+
+
+
+
+
+
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
+/* contact section */
 /* contact section */
 
 #id02 *, .contactHeader *, .contactGrid * {
@@ -1060,6 +1087,8 @@ button {
     border-radius: 3em;
     box-shadow: 0 0 16px black;
     padding: 2em;
+    max-width: 1000px;
+    margin-inline: auto;
 }
 
 
@@ -1073,7 +1102,8 @@ button {
   /* Floating column: 60% width */
   .col-60 {
     float: left;
-    width: 60%;
+    width: calc(100% - 325px);
+    max-width: 60%;
     margin-top: 6px;
   }
 
@@ -1084,6 +1114,7 @@ button {
     background-color: var(--clr-brand-primary);
     border-radius: 2em;
     padding: 3em 2.5em;
+    min-width: 325px;
     
 }
 
@@ -1100,30 +1131,35 @@ button {
 }
 
 
-/* .contactHeader img {
-    width: 3em;
-    aspect-ratio: 1;
-    float: left;
-} */
-
 .contactItem {
     margin-bottom: 0.8em;
-}
+    margin-inline: auto;
+    max-width: 350px;
 
 
-.contactIcon {
-    width: 56px;
-    height: 56px;
-    /* padding: 12px; */
-    /* border: 1px solid white;
-    border-radius: 100em; */
-    overflow: hidden;
-    margin-right: 1em;
-}
+    .contactIcon {
+        width: calc(25% - 1em);
+        aspect-ratio: 1;
+        max-width: 56px;
+        overflow: hidden;
+        margin-right: 1em;
+        float: left;
+        /* margin-top: 6px; */
 
-.contactIcon .svgIcons {
-    width: 100%;
-    height: 100%;
+    }
+    
+    .svgIcons {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contactInfo {
+        float: left;
+        width: 75%;
+        max-width: 250px;
+        margin-top: 6px;
+
+    }
 }
 
 
@@ -1355,6 +1391,13 @@ footer {
     }
 
 
+    .col-25, .col-75, .col-40, .col-60, input[type=submit] {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+
     [class*="col-"] {
         width: 100%;
     }
@@ -1402,6 +1445,16 @@ footer {
 
             
         }
+    }
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    
+    .cancelbtn {
+       width: 100%;
     }
 }
 
