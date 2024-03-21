@@ -44,7 +44,7 @@
     text-decoration: none;
     color: var(--clr-neutral-black);
 
-    /* border: 1px solid lime; */
+    border: 1px solid lime;
 }
 
 html {
@@ -773,9 +773,6 @@ section {
 /* cta section */
 /* cta section */
 
-#ctaSection * {
-    border: 1px solid lime;
-}
 
 .ctaWrapper {
     background-color: var(--clr-brand-primary);
@@ -859,10 +856,15 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    flex-wrap: nowrap;
+    gap: 3em;  
+    min-width: 0;
+    max-height: 145px;
 }
 
 .projectImg {
+    /* flex: 30%; */
+    width: 30%;
     max-width: 220px;
 }
 
@@ -1239,39 +1241,6 @@ footer {
 
 /* Media Queries */
 
-/* 320px (small phones) */
-@media only screen and (max-width: 400px) {
-
-    #hero {
-
-        #heroContent {
-            p {
-                font-size: 0.9em;
-                min-width: 320px;
-            }
-        }
-    }
-
-    #processContainer {
-        flex-direction: column;
-
-        .processCard {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            justify-content: flex-start;
-            align-items: stretch;
-
-            div {
-                text-align: left;
-                padding-left: 0.5em;
-                border-radius: 2em 0 0 2em;
-                background-image: linear-gradient(to right, var(--clr-glow), transparent);
-            }
-        }
-    }
-}
-
 
 /* 768px (tablets) */
 @media only screen and (max-width: 800px) {
@@ -1375,9 +1344,66 @@ footer {
     }
 
 
+    #portfolio {
+        .projectContainer {
+            gap: 1.5em;
+
+            .projectImg {
+                padding: 0.3em;
+            }
+        }
+    }
+
+
     [class*="col-"] {
         width: 100%;
     }
 }
+
+
+
+/* 320px (small phones) */
+@media only screen and (max-width: 400px) {
+
+    #hero {
+
+        #heroContent {
+            p {
+                font-size: 0.9em;
+                min-width: 320px;
+            }
+        }
+    }
+
+    #processContainer {
+        flex-direction: column;
+
+        .processCard {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            justify-content: flex-start;
+            align-items: stretch;
+
+            div {
+                text-align: left;
+                padding-left: 0.5em;
+                border-radius: 2em 0 0 2em;
+                background-image: linear-gradient(to right, var(--clr-glow), transparent);
+            }
+        }
+    }
+
+
+
+    #portfolio {
+        .projectContainer {
+            gap: 1em;
+
+            
+        }
+    }
+}
+
 
 
