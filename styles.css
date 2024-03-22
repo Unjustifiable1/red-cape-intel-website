@@ -647,16 +647,17 @@ section {
     min-width: 60%;
     position: relative;
     flex-direction: row;
+
+    .bentoLargeContent {
+        width: 50%;
+        transform: none;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
 }
 
-.bentoLargeContent {
-    width: 50%;
-    transform: none;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-}
 
 .benefitHide {
     display: none;
@@ -1335,6 +1336,10 @@ footer {
                 text-shadow: 0 0 4px black;
             }
 
+            #heroCTA:hover {
+                text-shadow: none;
+            }
+
             .heroH2 span, p {
                 text-align: center;
             }
@@ -1460,6 +1465,16 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
+    .benefitCard {
+        min-width: 35%;
+    }
+
+    #benefitImg1, #benefitImg2 {
+        display: none;
+    }
+
+
 
     .footerContent {
         grid-template-columns: repeat(2, 1fr);

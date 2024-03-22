@@ -104,3 +104,18 @@ function readMore2(btn) {
   benefitPost.querySelector(".benefitDots").classList.toggle("benefitHide");
   benefitPost.querySelector(".benefitMore").classList.toggle("benefitHide");
 }
+
+
+// benefit section responsiveness - remove large card classes on 600px or less screen
+
+let bentoLargeCards = document.querySelectorAll("#bentoLarge");
+window.addEventListener("resize", function() {
+  bentoLargeCards.forEach(content => {
+    if (window.innerWidth < 600) content.classList.remove("bentoLarge");
+    else content.classList.add("bentoLarge");
+  });
+});
+
+bentoLargeCards.forEach(content => {
+  if (window.innerWidth < 600) content.classList.remove("bentoLarge");
+});
