@@ -44,7 +44,7 @@
     text-decoration: none;
     color: var(--clr-neutral-black);
 
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
 }
 
 html {
@@ -1179,6 +1179,29 @@ button {
 
 
 
+
+
+
+
+
+
+
+
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
+/* footer section */
 /* footer section */
 
 .footerContent {
@@ -1288,6 +1311,11 @@ footer {
         font-size: 12px;
     }
 
+    section {
+        padding: 4em var(--pg-margin);
+        min-height: 20dvh;
+    }
+
     #hero {
         .wrapper {
             display: flex;
@@ -1391,6 +1419,11 @@ footer {
     }
 
 
+    .contactItem {
+        max-width: 280px;
+    }
+
+
     .col-25, .col-75, .col-40, .col-60, input[type=submit] {
         width: 100%;
         max-width: 100%;
@@ -1400,6 +1433,38 @@ footer {
 
     [class*="col-"] {
         width: 100%;
+    }
+
+
+    .footerContent {
+        grid-template-columns: 1.5fr 4px repeat(2, 1fr);
+
+
+        .footerCol1 {grid-area: 1 / 1 / 3 / 2;}
+        .footerDivider {grid-area: 1 / 2 / 3 / 3;}
+        .footerCol2 {grid-area: 1 / 3 / 2 / 4;}
+        .footerCol3 {grid-area: 2 / 3 / 3 / 4;}
+        .footerCol4 {grid-area: 2 / 4 / 3 / 5;}
+        .footerCol5 {grid-area: 1 / 4 / 2 / 5;}
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .footerContent {
+        grid-template-columns: repeat(2, 1fr);
+
+
+        .footerCol1 {grid-area: 4 / 1 / 5 / 3;}
+        .footerDivider {grid-area: 3 / 1 / 4 / 3;}
+        .footerCol2 {grid-area: 1 / 1 / 2 / 2;}
+        .footerCol3 {grid-area: 2 / 1 / 3 / 2;}
+        .footerCol4 {grid-area: 2 / 2 / 3 / 3;}
+        .footerCol5 {grid-area: 1 / 2 / 2 / 3;}
     }
 }
 
@@ -1446,17 +1511,28 @@ footer {
             
         }
     }
+
+
+    .footerContent {
+        grid-template-columns: 1fr;
+
+
+        .footerCol1 {grid-area: 6 / 1 / 7 / 2;}
+        .footerDivider {grid-area: 5 / 1 / 6 / 2;}
+        .footerCol2 {grid-area: 4 / 1 / 5 / 2;}
+        .footerCol3 {grid-area: 2 / 1 / 3 / 2;}
+        .footerCol4 {grid-area: 3 / 1 / 4 / 2;}
+        .footerCol5 {grid-area: 1 / 1 / 2 / 2;}
+    }
 }
 
 
 
-/* Change styles for span and cancel button on extra small screens */
+/* Change styles for cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     
     .cancelbtn {
        width: 100%;
     }
 }
-
-
 
