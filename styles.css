@@ -11,8 +11,7 @@
 
     --clr-glow: #50C878;
     --clr-glow-dim: #50c878b0;
-
-    --clr-glow-yellow: #DCFC19;
+    --clr-glow-light: #D0F1DB;
 
     --clr-feat1: #dbeafe;
     --clr-feat2: #ffedd5;
@@ -104,12 +103,12 @@ nav li {
 }
 
 #navCTA {
-    flex-shrink: 0;
+    /* flex-shrink: 1; */
     text-transform: uppercase;
 }
 
 #navLogoContainer {
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     border: 2px solid transparent;
     height: 5em;
     transition: 0.2s;
@@ -290,6 +289,21 @@ section {
 
 
 
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
+/* hero section */
 /* hero section */
 
 #hero {
@@ -506,37 +520,13 @@ section {
 .featureIcon {
     border-radius: 1em;
     padding: 1em;
+    background-color: var(--clr-glow-light);
 }
 
 .featureIcon img {
     max-width: 50px;
     aspect-ratio: 1;
 }
-
-#featIcon1 {
-    background-color: var(--clr-feat1);
-}
-
-#featIcon2 {
-    background-color: var(--clr-feat2);
-}
-
-#featIcon3 {
-    background-color: var(--clr-feat3);
-}
-
-#featIcon4 {
-    background-color: var(--clr-feat4);
-}
-
-#featIcon5 {
-    background-color: var(--clr-feat5);
-}
-
-#featIcon6 {
-    background-color: var(--clr-feat6);
-}
-
 
 
 
@@ -1367,6 +1357,11 @@ footer {
 
             .heroSlides {
                 opacity: 0.3;
+                
+                img {
+                    width: auto;
+                    height: 100%
+                }
             }
         }
     }
@@ -1465,6 +1460,17 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
+
+    #navCTA {
+        font-size: 1em;
+    }
+
+    #navLogoContainer {
+        height: 3em;
+    }
+
+
 
     .benefitCard {
         min-width: 35%;

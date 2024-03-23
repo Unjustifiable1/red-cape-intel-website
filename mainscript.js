@@ -16,10 +16,10 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("navLogoContainer").style.height = "3em";
     document.getElementById("navCTA").style.fontSize = "1em";
-  } else {
+  } else if (window.innerWidth > 600) {
     document.getElementById("navLogoContainer").style.height = "5em";
     document.getElementById("navCTA").style.fontSize = "1.5em";
-  }
+  } else return;
 }
 
 
