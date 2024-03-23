@@ -110,12 +110,29 @@ function readMore2(btn) {
 
 let bentoLargeCards = document.querySelectorAll("#bentoLarge");
 window.addEventListener("resize", function() {
-  bentoLargeCards.forEach(content => {
-    if (window.innerWidth < 600) content.classList.remove("bentoLarge");
-    else content.classList.add("bentoLarge");
+  bentoLargeCards.forEach(card => {
+    if (window.innerWidth < 600) card.classList.remove("bentoLarge");
+    else card.classList.add("bentoLarge");
   });
 });
 
-bentoLargeCards.forEach(content => {
-  if (window.innerWidth < 600) content.classList.remove("bentoLarge");
+bentoLargeCards.forEach(card => {
+  if (window.innerWidth < 600) card.classList.remove("bentoLarge");
+});
+
+
+
+
+
+// features section responsiveness - dark bg >600 window, body bg <600 window
+
+let featuresSection = document.getElementById("features");
+window.addEventListener("resize", function() {
+    if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
+    else featuresSection.classList.add("darkBG");
+});
+
+
+window.addEventListener("load", function() {
+  if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
 });
