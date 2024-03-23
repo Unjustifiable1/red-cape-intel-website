@@ -110,6 +110,7 @@ function readMore2(btn) {
 
 let bentoLargeCards = document.querySelectorAll("#bentoLarge");
 let featuresSection = document.getElementById("features");
+let featureItems = document.querySelectorAll(".featureItem");
 
 
 window.addEventListener("resize", function() {
@@ -120,12 +121,23 @@ window.addEventListener("resize", function() {
 
   if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
   else featuresSection.classList.add("darkBG");
+
+  featureItems.forEach(item => {
+    if (window.innerWidth < 600) item.classList.add("gradientCard");
+    else item.classList.remove("gradientCard");
+  })
 });
 
-bentoLargeCards.forEach(card => {
-  if (window.innerWidth < 600) card.classList.remove("bentoLarge");
-});
 
 window.addEventListener("load", function() {
+
+  bentoLargeCards.forEach(card => {
+    if (window.innerWidth < 600) card.classList.remove("bentoLarge");
+  });
+
   if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
+
+  featureItems.forEach(item => {
+    if (window.innerWidth < 600) item.classList.add("gradientCard");
+  })
 });

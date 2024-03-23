@@ -106,12 +106,10 @@ nav li {
 }
 
 #navCTA {
-    /* flex-shrink: 1; */
     text-transform: uppercase;
 }
 
 #navLogoContainer {
-    /* flex-shrink: 1; */
     border: 2px solid transparent;
     height: 5em;
     transition: 0.2s;
@@ -677,6 +675,12 @@ section {
     color: var(--clr-neutral-white);
 }
 
+.gradientCard {
+    background-image: 
+        linear-gradient(0deg,#060a0f75,#060a0f45),
+        linear-gradient(135deg,#15191f05,var(--clr-glow-dim));
+}
+
 .benefitCard {
     display: flex;
     flex-direction: column;
@@ -688,9 +692,6 @@ section {
     cursor: pointer;
     /* position: relative; */
     padding: 1.5em 2em;
-    background-image: 
-        linear-gradient(0deg,#060a0f75,#060a0f45),
-        linear-gradient(135deg,#15191f05,var(--clr-glow-dim));
 
     .benefitDropper {
 
