@@ -106,32 +106,25 @@ function readMore2(btn) {
 }
 
 
-// benefit section responsiveness - remove large card classes on 600px or less screen
+// responsiveness - remove or add classes on 600px or less screen size
 
 let bentoLargeCards = document.querySelectorAll("#bentoLarge");
+let featuresSection = document.getElementById("features");
+
+
 window.addEventListener("resize", function() {
   bentoLargeCards.forEach(card => {
     if (window.innerWidth < 600) card.classList.remove("bentoLarge");
     else card.classList.add("bentoLarge");
   });
+
+  if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
+  else featuresSection.classList.add("darkBG");
 });
 
 bentoLargeCards.forEach(card => {
   if (window.innerWidth < 600) card.classList.remove("bentoLarge");
 });
-
-
-
-
-
-// features section responsiveness - dark bg >600 window, body bg <600 window
-
-let featuresSection = document.getElementById("features");
-window.addEventListener("resize", function() {
-    if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
-    else featuresSection.classList.add("darkBG");
-});
-
 
 window.addEventListener("load", function() {
   if (window.innerWidth < 600) featuresSection.classList.remove("darkBG");
