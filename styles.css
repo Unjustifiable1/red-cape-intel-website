@@ -1372,6 +1372,12 @@ footer {
 .attribution a { color: hsl(115, 93%, 59%); }
 
 
+/* SEO requirements */
+
+.hiddenFromView {
+    display: none;
+}
+
 
 
 
