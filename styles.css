@@ -1569,6 +1569,18 @@ footer {
         display: none;
     }
 
+    .contactWrapper {
+        padding: 1em;
+    }
+
+    #contactDetails {
+        min-width: 280px;
+    }
+
+    #id02 {
+        padding-left: 1em;
+    }
+
 
 
     .footerContent {
