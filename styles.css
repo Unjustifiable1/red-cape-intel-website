@@ -792,8 +792,7 @@ section {
 
 .aboutContent {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 3em;
     
 }
@@ -1477,6 +1476,11 @@ footer {
     }
 
 
+    .aboutContent {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+
     #ctaSection {
         .ctaWrapper {
             height: fit-content;
@@ -1557,7 +1561,7 @@ footer {
     }
 
     #navLogoContainer {
-        height: 3em;
+        height: 4em;
     }
 
 
@@ -1565,6 +1569,9 @@ footer {
         margin-top: 6em;
     } */
 
+    .hiddenAt600 {
+        display: none;
+    }
 
 
     .benefitCard {
@@ -1622,8 +1629,16 @@ footer {
 
 
 
-/* 320px (small phones) */
+/* 400px (small phones) */
 @media only screen and (max-width: 400px) {
+
+    #navCTA {
+        font-size: 1em;
+    }
+
+    #navLogoContainer {
+        height: 3em;
+    }
 
     #hero {
 
@@ -1666,6 +1681,7 @@ footer {
 
 
     .footerContent {
+        margin-inline: 2em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto) 4px auto;
 
