@@ -22,9 +22,9 @@ function scrollFunction() {
   } else if (window.innerWidth > 400) {
     document.getElementById("navLogoContainer").style.height = "4em";
     document.getElementById("navCTA").style.fontSize = "1em";
-  } else if (window.innerWidth > 250) {
-    document.getElementById("navLogoContainer").style.height = "3em";
-    document.getElementById("navCTA").style.fontSize = "1em";
+  // } else if (window.innerWidth > 250) {
+  //   document.getElementById("navLogoContainer").style.height = "3em";
+  //   document.getElementById("navCTA").style.fontSize = "1em";
   } else return;
 }
 

@@ -1204,6 +1204,7 @@ button {
 .contactItem {
     margin-bottom: 0.8em;
     margin-inline: auto;
+    width:fit-content;
     max-width: 350px;
 
 
@@ -1228,7 +1229,16 @@ button {
         width: 75%;
         max-width: 250px;
         margin-top: 6px;
+        
+        p {border-bottom: 4px solid transparent;}
+    }
+}
 
+.contactItem:hover,
+.contactItem:focus {
+    .contactInfo p {
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, var(--clr-glow), transparent);
     }
 }
 
@@ -1342,7 +1352,13 @@ button {
     .footerSocialLinks {
         margin-top: 1.5em;
         display: flex;
-        gap: 1.5em; 
+        gap: 1em; 
+
+        .socialLink svg {
+            width: 2em;
+            height: 2em;
+            fill: var(--clr-glow);
+        }
     }
 }
 
@@ -1631,6 +1647,19 @@ footer {
 
 /* 400px (small phones) */
 @media only screen and (max-width: 400px) {
+
+    /* nav {
+        flex-direction: column;
+        gap: 0;
+
+        #navLogoContainer {
+            margin-right: auto;
+        }
+
+        #navCTA {
+            margin-left: auto;
+        }
+    } */
 
     #navCTA {
         font-size: 1em;
